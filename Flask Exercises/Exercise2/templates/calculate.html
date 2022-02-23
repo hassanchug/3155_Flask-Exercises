@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}Calculate{% endblock %} 
+{% block head %}
+{{ super() }}
+{% endblock %} 
+{% block content %} 
+<h1 class="text">Calculate</h1> 
+{% if name %}
+<h2 class="text">{{num}} is {{ name }}</h2> 
+{% else %}
+<h2 class="text">No number provided! </h2> 
+{% endif %}
+<a href="/">HOME</a> 
+{% endblock %}
+<style>
+.text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: red;
+    
+}
+</style>

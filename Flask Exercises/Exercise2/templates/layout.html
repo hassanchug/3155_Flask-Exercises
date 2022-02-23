@@ -1,0 +1,18 @@
+<html>
+    <head>
+        {%block head %}
+        <title class="text">{% block title %}{% endblock %} - My Webpage</title> 
+            {% endblock %}
+    </head> 
+    <body class="text">
+        <div id="content">{% block content %}{% endblock %}</div> 
+    </body>
+        <style>
+        .text{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: x-large;
+            color: red;
+            
+        }
+        </style>
+</html>
